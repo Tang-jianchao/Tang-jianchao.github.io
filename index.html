@@ -90,14 +90,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <aside>
-💡 尝试过多种记录笔记的方式，语雀，飞书，Notion， 有道云笔记，typora, gihtub....
-内容零散，不方便集中管理，最后还是回顾质朴
-
-<p>还是一起来写博客,搭个自己的静态站点吧～</p>
+    尝试过多种记录笔记的方式，语雀，飞书，Notion， 有道云笔记，typora, gihtub....
+内容零散，不方便集中管理，最后还是回顾质朴.还是一起来写博客,搭个自己的静态站点吧～
 </aside>
 
 <h3 id="GitHub静态站点项目"><a href="#GitHub静态站点项目" class="headerlink" title="GitHub静态站点项目"></a>GitHub静态站点项目</h3><ul>
-<li><p>新建一个以自己 <code>github</code> 名的仓库 项目名:  <em>username</em>.github.io</p>
+<li><p>新建一个以自己 <code>github</code> 名命名的仓库 项目名:  username.github.io</p>
 </li>
 <li><p>把项目拉到本地</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@gitxxxx</span><br></pre></td></tr></table></figure>
@@ -107,43 +105,17 @@
 <li><p>提交更新 访问 <a target="_blank" rel="noopener" href="https://xxx.github.io/">https://xxx.github.io</a></p>
 </li>
 </ul>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><blockquote>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/">Markdown</a><br>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-</blockquote>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><aside>
+       Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown]
+    (http://daringfireball.net/projects/markdown/)
+（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+</aside>
+
 <p>基本环境:  <a target="_blank" rel="noopener" href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)， Git。</p>
 <ul>
 <li><p>安装</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#全局安装</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment">#在已存在的目录或项目中</span></span><br><span class="line">npm install hexo</span><br><span class="line"></span><br><span class="line"><span class="comment">#安装之后执行 </span></span><br><span class="line">hexo</span><br></pre></td></tr></table></figure>
-  <aside>
-  ❕ INFO  Validating config
-  Usage: hexo <command>
-  
-<p>  Commands:</p>
-<pre><code>clean     Remove generated files and cache.
-config    Get or set configurations.
-deploy    Deploy your website.
-generate  Generate static files.
-help      Get help on a command.
-init      Create a new Hexo folder.
-list      List the information of the site
-migrate   Migrate your site from other system to Hexo.
-new       Create a new post.
-publish   Moves a draft post from _drafts to _posts folder.
-render    Render files with renderer plugins.
-server    Start the server.
-version   Display version information.
-</code></pre>
-<p>  Global Options:</p>
-<pre><code>--config  Specify config file instead of using _config.yml
---cwd     Specify the CWD
---debug   Display all verbose messages in the terminal
---draft   Display draft posts
---safe    Disable all plugins and scripts
---silent  Hide output on console
-</code></pre>
-<p>  For more help, you can use ‘hexo help [command]’ for the detailed information<br>  or you can check the docs: <a target="_blank" rel="noopener" href="http://hexo.io/docs/">http://hexo.io/docs/</a></p>
-  </aside>
-  
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">Validating config</span><br><span class="line">Usage: hexo &lt;command&gt;</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  clean     Remove generated files and cache.</span><br><span class="line">  config    Get or set configurations.</span><br><span class="line">  deploy    Deploy your website.</span><br><span class="line">  generate  Generate static files.</span><br><span class="line">  help      Get help on a command.</span><br><span class="line">  init      Create a new Hexo folder.</span><br><span class="line">  list      List the information of the site</span><br><span class="line">  migrate   Migrate your site from other system to Hexo.</span><br><span class="line">  new       Create a new post.</span><br><span class="line">  publish   Moves a draft post from _drafts to _posts folder.</span><br><span class="line">  render    Render files with renderer plugins.</span><br><span class="line">  server    Start the server.</span><br><span class="line">  version   Display version information.</span><br><span class="line"></span><br><span class="line">Global Options:</span><br><span class="line">  --config  Specify config file instead of using _config.yml</span><br><span class="line">  --cwd     Specify the CWD</span><br><span class="line">  --debug   Display all verbose messages in the terminal</span><br><span class="line">  --draft   Display draft posts</span><br><span class="line">  --safe    Disable all plugins and scripts</span><br><span class="line">  --silent  Hide output on console</span><br><span class="line"></span><br><span class="line">For more help, you can use &#x27;hexo help [command]&#x27; for the detailed information</span><br><span class="line">or you can check the docs: http://hexo.io/docs/</span><br></pre></td></tr></table></figure>
 <p>  能看到上面的内容就是安装成功，能正确执行hexo命令,反之可能需要配置环境变量</p>
 </li>
 <li><p>项目初始化</p>
@@ -194,7 +166,7 @@ version   Display version information.
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tang-jianchao.github.io/2022/03/31/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9%20/" data-id="cl1eu7r0f0002oo784wvj5yh5" class="article-share-link">Share</a>
+      <a data-url="https://tang-jianchao.github.io/2022/03/31/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9%20/" data-id="cl1eugh4k0000fp786bzl6it1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -241,56 +213,7 @@ version   Display version information.
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tang-jianchao.github.io/2022/03/31/ts%E7%9B%B8%E5%85%B3/" data-id="cl1eu7r0a0000oo78go1fe2xl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/03/31/hello-world/" class="article-date">
-  <time datetime="2022-03-31T08:31:21.574Z" itemprop="datePublished">2022-03-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/03/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://tang-jianchao.github.io/2022/03/31/hello-world/" data-id="cl1eu7r0e0001oo787wu38sv4" class="article-share-link">Share</a>
+      <a data-url="https://tang-jianchao.github.io/2022/03/31/ts%E7%9B%B8%E5%85%B3/" data-id="cl1eugh4o0001fp78525t837l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -336,10 +259,6 @@ version   Display version information.
         
           <li>
             <a href="/2022/03/31/ts%E7%9B%B8%E5%85%B3/">TS Summary</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/31/hello-world/">Hello World</a>
           </li>
         
       </ul>
