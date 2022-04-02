@@ -14,8 +14,8 @@
             height:100%
         }
         .intro{
-            border-right: 2px solid;
-            border-color: #208ddd;
+            border-right: 1px solid;
+            /* border-color: #999999; */
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -24,19 +24,20 @@
         }
         .intro-content{
             padding: 10px;
-            color: #208ddd;
+            /* color: #208ddd; */
         }
         .article{
             margin-top: 20px;
-            color: #208ddd;
+            /* color: #208ddd; */
         }
         #intro-icon{
             border-radius: 50%;
             height:100px;
             width: 100px;
+            cursor: pointer;
         }
         a{
-            color: #208ddd;
+            color: black;
         }
        
     </style>
@@ -49,7 +50,7 @@
         <section class="intro">   
             <img id="intro-icon" src="https://avatars.githubusercontent.com/u/26502777?v=4"/>
             <p class="intro-content">
-                “ 一个积极行动的悲观主义者 ”
+                “ 平静的湖面练不出优秀的水手 ”
             </p>
         </section>
        <!-- 文章 -->
@@ -68,5 +69,9 @@
        </section>  
     </body>
 </html>
+<script src="./assets/js/tools.js"></script>
 <script>
+    $('intro-icon').click(() => {
+        window.open('https://github.com/Tang-jianchao')
+    })
 </script>
